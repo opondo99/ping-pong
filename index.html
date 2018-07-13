@@ -4,7 +4,7 @@
         <title>Ping Pong</title>
         <link href="/styles/bootstrap.css" rel="stylesheet">
         <link href="/styles/main.css" rel="stylesheet">
-        <script src="/styles/bootstrap.bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
         <script src="/styles/main.js"></script>
     </head>
     <body>
@@ -30,8 +30,12 @@
                         <li>Numbers divisible by 3 and 5 become 'pingpong'</li>
                     </ol>
                     <form>
-                        <input type="text">
+                        <input type="number" id="userInput" placeholder="input your number here">
+                        <button type="submit">Ping Pong</button>
                     </form>
+                    <div id="result">
+
+                    </div>
                 </div>
             </div>
         </div>
