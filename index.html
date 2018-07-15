@@ -6,7 +6,10 @@
         <title>Ping Pong</title>
         <link href="/css/bootstrap.css" rel="stylesheet">
         <link href="/css/main.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -31,7 +34,7 @@
                         <li>Numbers divisible by 5 become 'pong'</li>
                         <li>Numbers divisible by 3 and 5 become 'pingpong'</li>
                     </ol>
-                    <form>
+                    <form id="userInputForm">
                         <input type="number" id="userInput" placeholder="input your number here">
                         <button type="submit" class="btn btn-primary">Ping Pong</button>
                     </form>
