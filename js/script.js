@@ -3,22 +3,20 @@ $(document).ready(function(){
         event.preventDefault()
     })
     var input = parseInt($("input#userInput").val());
-    var result = numbers(input)
-    $("#result").text(result)
+    $("#result").text(input)
 });
 
 
-
-
-var pingPong = function(input){
-        if(input % 3 ===0 && input % 5 === 0){
-            return PingPong;
-        }
+for(var input = 0; input <= 100; input++){
+    if((input%3 === 0) && (input%5 === 0))
+        console.log("pingpong");
+    else if(input%3 === 0)
+        console.log("ping");
+    else if(input%5 === 0)
+        console.log("pong");
+    else
+        console.log(input);
+}
     
-        else if(input % 3 === 0){
-        return Ping
-    }
-        else if(input % 5 === 0){
-        return Pong;
-    }
-};
+
+
