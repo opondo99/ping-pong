@@ -5,13 +5,13 @@ $(document).ready(function(){
 
         for(var number = 1; number <= input; number++){
             if((number %3 === 0) && (number %5 === 0))
-                $("#result").text("pingpong");
+                $("#result").append("<br>pingpong<br>");
             else if(number %3 === 0)
-                $("#result").text("ping");
+                $("#result").append("<br>ping<br>");
             else if(number %5 === 0)
-                $("#result").text("pong");
+                $("#result").append("<br>pong</br>");
             else
-                $("#result").text(number);
+                $("#result").append(number);
         }
     })
 
